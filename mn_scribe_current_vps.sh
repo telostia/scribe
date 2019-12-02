@@ -24,10 +24,14 @@ if [ -z "${wanip}" ]; then
     echo -e "${RED}Sorry, we don't know your external IPv4 addr${NC}" && echo ""
     echo -e "${GREEN}Input your IPv4 addr manually:${NC}" && read wanip
 fi
+
+
 echo "Your external IP is $wanip y/n?"
 read wan
             if [ "$wan" != "y" ]; then
-               echo -e "${RED}Sorry, we don't know your external IPv4 addr${NC}" && exit 1
+					echo "Please enter your custom IP:"
+					read wancustom
+					wanip=${wancustom}
             fi
 
 # Download scribe sources //
