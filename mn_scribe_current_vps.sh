@@ -176,7 +176,7 @@ echo ""
 
 # Final start
 echo ""
-echo -e "${GREEN}5/5 Masternode config done, storADE platform installed - starting scribe again${NC}"
+echo -e "${GREEN}5/5 Masternode config done, starting scribe again${NC}"
 echo ""
 sudo systemctl start scribe
 echo -e "${RED}The blockchain is syncing from scratch. You have to wait few hours to sync all the blocks!${NC}"
